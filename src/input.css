@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Gilroy',sans-serif;
+  src: url('/path/to/fonts/Gilroy-Regular.woff2') format('woff2'),
+       url('/path/to/fonts/Gilroy-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer utilities {
+    .placeholder-blink::placeholder {
+      animation: blink-animation 1.5s steps(5, start) infinite;
+    }
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+  } 
+  .bg-img 
+  {
+      background-image: url('./Assets/yellowchair.png');
+      width: 370px;
+      height: 476px;
+      background-size: cover ;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+  }
+  .bg-img2
+  {
+    background-image: url('./Assets/bg2.png');
+    width: 370px;
+    height: 476px;
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+.bg-img2
+  {
+    background-image: url('./Assets/bg2.png');
+    width: 370px;
+    height: 476px;
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+  .bg-img3
+  {
+    background-image: url('./Assets/bg3.png');
+    width: 370px;
+    height: 476px;
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat; 
+  }
+  /* \end{code} */

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth focus:scroll-auto">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panto</title>
+    <link href="./output.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+   
+   <body class="h-screen max-auto"> 
+     <div class="h-screen w-full bg-[url('./Assets/headerimg.jpg')] bg-center bg-cover bg-no-repeat"> 
+     
+      <header class="bg-none">
+    <nav class="flex justify-between items-center py-5 w-[92%] mx-auto">
+      
+      <div class="..">
+        <h1 class="w-16 text-white font-bold text-[28px] "alt="...">Panto</h1></div>
+     <!------Nav bar inside the section------------>
+      <div class="nav-links duration-500 md:static absolute md:min-h-fit sm:bg-white md:bg-transparent min-h-[60vh] left-0 top-[-100%] w-full flex items-center
+      px-5 md:w-auto">
+      
+        <ul class="flex md:flex-row flex-col items-center text-xl md:gap-[4vw] gap-8">
+        <li>
+          <a class="text-white hover:text-orange-400" href="">Furniture</a></li>
+        <li>
+          <a class="text-white  hover:text-orange-400" href="">Shop</a></li>
+        <li>
+          <a class="text-white hover:text-orange-400" href="">About Us</a></li>
+        <li>
+          <a  class="text-white  hover:text-orange-400" href="">Contact</a></li>
+      </ul>
+     </div>
+     <!-----------Nav inside section end---------> 
+
+     <!-- cart image logo section -->
+     <div class="flex items-center gap-8">
+      <div class="indicator">
+        <img src="./Assets/cart.png" class="md:w-8 sm: w-7 cursor-pointer">
+        <span class="indicator-item indicator-middle badge badge-warning bg-orange-500 text-white h-7 w-4 font-bold">0</span>
+      </div>
+        
+      <ion-icon onclick="ontogglemenu(this)" name="menu-Sharp" class=" rounded-btn text-3xl cursor-pointer sm:w-9 h-8 md:hidden"></ion-icon>
+     </div>
+     <!-----cart image logo section End ------>
+     </nav>
+</header>
+
+ <!-- SearchBar input section start -->
+<div class="relative text-center">
+  <h2 class="pt-5 md:pt-32 lg:pt-1 md:mb-6 lg:mb-2 text-4xl md:text-4xl lg:text-6xl font-bold  lg:leading-normal text-white">Make your interior more<br>minimalistic & modern</h2>
+  <p class="font-light text-white opacity-[80%] text-md  md:text-2xl lg:text-xl md:mb-4 lg:mb-8 sm:leading-normal">Turn your room with panto into a lot more minimalist<br>and modern with ease and speed</p>
+</div>
+<div  data-aos="fade-left"class="flex justify-center mt-1">
+  <div class="relative  md:bottom-4">
+      <input type="text" placeholder="Search furniture" id="SearchBar" 
+      class="bg-slate-200 bg-opacity-10  w-[334px] border border-stone-300 text-xl text-slate-50 rounded-full py-3 px-4 focus:outline-none  focus:ring focus:ring-opacity-20 transition-colors-white duration-300 placeholder-blink">
+      <button class="absolute top-1/2 -translate-y-1/2 right-4 bg-orange-400 hover:bg-orange-300 text-black rounded-full p-2 ">
+       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+ </svg> 
+ </button>
+ </div>
+ </div>
+  <!------ colour button section-------
+<div class="flex mx-auto items-center justify-start ">
+  <div class="relative left-56  flex space-x-4 rounded-full border-l border-b-slate-50 bg-slate-200 bg-opacity-15 p-2 shadow-lg w-40">
+    <!-- First Button (Orange with Checkmark) --
+    <div class="flex h-9 w-14 items-center justify-center border-2 rounded-full bg-orange-500">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+      </svg>
+    </div>
+  
+ Second Button (Cyan, Active) --
+    <div class="flex h-9 w-14 items-center justify-center border-2 rounded-full bg-cyan-500">
+      <div class="h-4 w-4 rounded-full bg-white"></div>
+    </div>
+  
+    <!-- Third Button (Gray, Inactive) --
+    <div class="flex h-9 w-14 items-center justify-center border-2 rounded-full bg-gray-500"></div>
+  
+    <!-- Pointer/Indicator below the middle button --
+    <div class="absolute -bottom-1 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 transform bg-gray-900"></div>
+  </div>
+  </div>
+  </div>-->
+
+</div>
+
+<!-- <------------------Hero section End------------------>
+
+ <!-------------------- Text  grid section start---------->
+<div data-aos="fade-up" class="max-w-full mx-auto p-20 bg-slate-50 flex flex-col md:flex-row items-start md:items-center space-y-8 md:space-y-0 shadow-sm">
+  <!-- Title Section -->
+  <div class="md:w-1/4 md:text-xl">
+    <h2 class="text-4xl font-bold text-gray-900 text-start">Why<br>Choosing Us</h2>
+  </div>
+  
+  <!-- Grid Section -->
+  <div class="md:w-3/4 grid grid-cols-1 md:grid-cols-3 gap-12 text-justify">
+    
+    <!-- Card 1 -->
+    <div class="flex flex-col items-start space-y-4">
+      <h3 class="text-2xl opacity-[90%] font-bold text-gray-800">Luxury Facilities</h3>
+      <p class="text-gray-600 text-[16px] font-Montserrat ">The advantage of hiring a workspace with us is that gives you comfortable service and all-around facilities.</p>
+      <a href="#" class="text-orange-300 font-medium flex items-center hover:underline text-xl">
+        More Info <span class="ml-2 translate-x-5">&rarr;</span>
+      </a>
+      <!-- <span class="ml-2">→</span>  alternate the arrowmark → this to &rarr -->
+    </div>
+    
+    <!-- Card 2 -->
+    <div class="flex flex-col items-start space-y-4">
+      <h3 class="text-2xl opacity-[90%] font-bold text-gray-800">Affordable Price</h3>
+      <p class="text-gray-600 text-[16px] font-Montserrat">You can get a workspace of the highest quality at an affordable price and still facilities that are only here.</p>
+      <a href="#" class="text-orange-300 font-medium flex items-center hover:underline text-xl">
+        More Info <span class="ml-2">&rarr;</span>
+      </a>
+      <!-- <span class="ml-2">→</span> alternate the arrowmark → this to &rarr -->
+    </div>
+    
+    <!-- Card 3 -->
+    <div class="flex flex-col items-start space-y-4">
+      <h3 class="text-2xl opacity-[90%] font-bold text-gray-800">Many Choices</h3>
+      <p class="text-gray-600 text-[16px] font-Montserrat">We provide many unique workspace choices so that you can choose the workspace to your liking.</p>
+      <a href="#" class="text-orange-300 font-medium flex items-center hover:underline text-xl">
+        More Info <span class="ml-2 ">&rarr;</span>
+      </a>
+      <!-- <span class="ml-2">→</span> -->
+    </div>
+  </div>
+  </div>
+<!-------------------- Text grid section End---------->
+
+<!----------pricing cart cardsection start-------------->
+<div data-aos="fade-up"  class="bg-gray-100 h-[800px]">
+<div class="max-w-8xl mx-auto px-4 py-8">
+  <h2 class="text-center text-[42px]  text-black font-bold mb-8">Best Selling Product</h2>
+  
+  <!-- Product Filters -->
+  <div class="flex justify-center space-x-4 mb-6 rounded-[44px]">
+    <button class="px-4 py-3 bg-white  text-gray-500 rounded-full border">Chair</button>
+    <button class="px-4 py-3 text-gray-500 rounded-full hover:text-black">Beds</button>
+    <button class="px-4 py-3 text-gray-500 rounded-full border hover:text-black">Sofa</button>
+    <button class="px-4 py-3 text-gray-500 rounded-full border hover:text-black">Lamp</button>
+  </div>
+</div>
+   <!-----swiper card section start-------> 
+   <section>
+    <div class="flex">
+        <!-----Left Arrow---->
+        <div class="w-2/12 flex items-center">
+            <div class="w-full  text-right">
+              <button onclick="prev()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg mr-5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="size-7">
+                  <path fill-rule="evenodd" d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+                </svg>
+                </button>
+            </div>
+        </div>
+        <div data-aos="zoom-out-up"  id="sliderContainer" class="w-10/12 overflow-hidden">
+            <ul id="slider" class="flex w-full gap-1">
+                <!-- product 1 -->
+              <li class="p-5">
+                    <div class="border bg-white rounded-b-2xl p-5 h-full w-64">
+                        <img class="h-50 w-full object-cover rounded-md mb-4" src="./Assets/chairs1.jpg" alt="">
+                        <p class="text-gray-400 text-[16px] leading-loose font-normal mt-1">Chair</p>
+                        <h3 class=" text-[21px] mt-2 font-semibold text-slate-900">Sakarias Armchair</h3>
+                        <span class="flex items-center mt-2 text-yellow-500 text-3xl gap-2 ">★★★★★</span>
+                       <div class="flex justify-between items-center mt-4">
+                         <span class="text-xl font-bold text-slate-900">$392</span>
+                           <button class="bg-black text-white p-2 rounded-full">
+                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                              <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+              </svg>
+              </button>
+               </div>
+               </div>
+              </li>
+                 <!----product 2---->
+                <li class="p-5 ">
+                    <div class="border bg-white rounded-b-2xl  p-5 h-full w-64">
+                        <img class="h-50 w-full object-cover rounded-md mb-4" src="./Assets/chairs2.png " alt="">
+                        <p class="text-gray-400 text-[16px] leading-loose font-normal mt-2">Chair</p>
+                        <h3 class=" text-[21px] mt-2 font-semibold text-slate-900">Baltsar Chair</h3>
+                        <span class="flex items-center mt-2 text-yellow-500 text-3xl gap-2 ">★★★★★</span>
+                        <div class="flex justify-between items-center mt-4">
+                           <span class="text-xl font-bold text-slate-900">$299</span>
+                              <button class="bg-black text-white p-2 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                 <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+               </svg>
+               </button>
+               </div>
+              </div>
+              </li>
+                 <!---product 3 ---->
+                <li class="p-5">
+                    <div class="border bg-white rounded-b-2xl p-5 h-full w-64">
+                        <img class="h-52 w-full object-cover rounded-md mt-4" src="./Assets/chairs3.png" alt="">
+                        <p class="text-gray-400 text-[16px] leading-loose font-normal mt-1">Chair</p>
+                        <h3 class=" text-[21px] mt-2 font-semibold text-slate-900">Anjay Chair</h3>
+                        <span class="flex items-center mt-2 text-yellow-500 text-3xl gap-2 ">★★★★★</span>
+                        <div class="flex justify-between items-center mt-4">
+                           <span class="text-xl font-bold text-slate-900">$519</span>
+                              <button class="bg-black text-white p-2 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                 <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+               </svg>
+               </button>
+               </div>
+                </li>
+                 <!-- product 4 -->
+                <li class="p-5">
+                    <div class="border bg-white rounded-b-2xl p-5 h-full w-64">
+                        <img class="h-50 w-full object-cover rounded-md mb-4" src="./Assets/chairs4.png" alt="">
+                        <p class="text-gray-400 text-[16px] leading-loose font-normal mt-4">Chair</p>
+                        <h3 class=" text-[21px] mt-2 font-semibold text-slate-900">Nyantuy Chair</h3>
+                        <span class="flex items-center mt-2 text-yellow-500 text-3xl gap-2">★★★★★</span>
+                        <div class="flex justify-between items-center mt-4">
+                           <span class="text-xl font-bold text-slate-900">$921</span>
+                              <button class="bg-black text-white p-2 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                 <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+               </svg>
+               </button>
+               </div>
+                </li>
+                 <!--- product 5--->
+                <li class="p-5">
+                    <div class="border bg-white rounded-b-2xl p-5 h-full">
+                        <img class="h-50 w-full object-cover rounded-md" src="./images/2.jpeg" alt="">
+                        <h2 class="mt-2 text-2xl font-bold text-gray-700">Some Big Heading.</h2>
+                        <p class="mt-2 text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere animi earum quasi
+                            deleniti, maxime numquam.
+                        </p>
+                        <button class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold">Read
+                            More</button>
+                    </div>
+                </li>
+                 <!---product 6---->
+                <li class="p-5">
+                    <div class="border  bg-white rounded-b-2xl p-5 h-full">
+                        <img class="h-50 w-full object-cover rounded-md" src="./images/3.webp" alt="">
+                        <h2 class="mt-2 text-2xl font-bold text-gray-700">Some Big Heading.</h2>
+                        <p class="mt-2 text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere animi earum quasi
+                            deleniti, maxime numquam.
+                        </p>
+                        <button class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold">Read
+                            More</button>
+                    </div>
+                </li>
+                 <!----product 7---->
+                <li class="p-5">
+                    <div class="border bg-white rounded-b-2xl  p-5 h-full">
+                        <img class="h-50 w-full object-cover rounded-md" src="./images/1.jpeg" alt="">
+                        <h2 class="mt-2 text-2xl font-bold text-gray-700">Some Big Heading.</h2>
+                        <p class="mt-2 text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere animi earum quasi
+                            deleniti, maxime numquam.
+                        </p>
+                        <button class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold">Read
+                            More</button>
+                    </div>
+                </li>
+                 <!----product 8---->
+                <li class="p-5">
+
+                    <div class="border bg-white rounded-b-2xl p-5 h-full">
+                        <img class="h-50 w-full object-cover rounded-md" src="./images/2.jpeg" alt="">
+                        <h2 class="mt-2 text-2xl font-bold text-gray-700">Some Big Heading.</h2>
+                        <p class="mt-2 text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere animi earum quasi
+                            deleniti, maxime numquam.
+                        </p>
+                        <button class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold">Read
+                            More</button>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <!----swiper card section End------>
+
+        <!-----Right Arrow- -->
+        <div class="w-2/12 flex items-center">
+            <div class="w-full">
+                <button onclick="next()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg ml-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="size-7">
+                    <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- View All Link -->
+<div class="text-center mt-10">
+    <a href="#" class="text-orange-500 font-semibold">View All</a>
+</div>
+</div>
+<!----------pricing cart cardsection End------------->
+
+  <!-- Experience Grid Section Container -->
+   <div class="bg-gray-50 p-5 pb-0"> 
+  <div class="max-w-8xl mx-auto px-4 py-16 flex flex-col lg:flex-row items-center gap-8 font-gilroy">
+    <!-- Image Section -->
+    <div data-aos="flip-up" class="relative w-full lg:w-1/2">
+      <!-- Picture background shade colour section -->
+      <!-- <div class="absolute  top-20 left-[180px] w-[490px] h-[301px] bg-gray-200 rounded-3xl -z-10"></div>
+      <div class="absolute bottom-24 left-0  w-[468px] h-[422px] bg-blue-600 rounded-3xl -z-10"></div> -->
+      <img src="./Assets/sofas.jpg " alt="Interior Design" class=" relative w-[600px] h-50 rounded-r-3xl shadow-2xl lg:right-9">
+    </div>
+
+    <!-- Text Section -->
+    <div data-aos="fade-up"
+     data-aos-duration="500" class="w-full lg:w-1/2 flex flex-col justify-center ">
+      <p class="text-orange-300 uppercase tracking-wider text-[18px]  font-semibold mb-4">Experiences</p> <!-- Wider tracking for label -->
+      
+      <!-- Heading with spacing between letters -->
+      <h2 class="text-[42px] font-bold text-gray-800 mb-6 tracking-wide leading-tight font-gilroy">
+        We Provide You The<br> Best Experience
+      </h2>
+      
+      <!-- Justified paragraph text -->
+      <p class="text-gray-600 mb-8 text-[18px] font-poppins text-justify leading-loose">
+        You don’t have to worry about the result because all of these<br>interiors are 
+        made by people who are professionals in their fields<br>with an elegant and 
+        luxurious style and with premium quality<br>materials.
+      </p>
+      
+      <a href="#" class="text-orange-300 text-xl w-[121px]font-semibold hover:underline flex items-center">
+        More Info <span class="ml-2 ">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+  <!---Experience Grid Section Container End --->
+
+<!--- Materials Grid Sections--->
+<div class="bg-white ">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <!-- Text Section on the Left -->
+        <div  data-aos="fade-right" class=" relative mt-32 order-2 lg:order-1 text-start lg:right-20">
+            <h2 class="text-orange-300 font-semibold tracking-wider text-[18px] uppercase mb-4">Materials</h2>
+            <h1 class="lg:text-[42px] font-bold text-gray-900 mb-4 leading-tight">Very Serious<br>Materials For Making<br> Furniture</h1>
+            <p class="text-gray-600  text-[18px] font-poppins text-justify leading-loose">
+                Because Panto was very serious about designing furniture for our<br>environment, using a very 
+                expensive and famous capital but at a<br>relatively low price.
+            </p>
+            <a href="#" class="text-orange-300 mt-5 hover:text-orange-600 text-xl w-[121px] font-semibold inline-flex items-center">
+                More Info <span class="ml-2 ">&rarr;</span>
+            </a>
+        </div>
+
+        <!-- Image Grid Section on the Right -->
+        <div  class="grid grid-cols-2 gap-8 order-1 lg:order-2">
+            
+          <!-- Top-left image (small) -->
+           
+            <div  data-aos="flip-left" class=" relative lg:left-9">
+              <img class="h-60 w-60 rounded-lg shadow-2xl " src="./Assets/Chair.jpg  " alt="Chair">
+          </div>
+            <!-- Bottom-right image (large - Dining Table) -->
+            <div data-aos="flip-up" class="relative col-span-1 lg:top-36 lg:w-96  md:w-44 h-32 md:h-24">
+                <img class=" h-96 rounded-l-3xl shadow-2xl" src="./Assets/dinning.png" alt="Dining Table">
+            </div>
+             <!-- Bottom-left image (large) -->
+            <div data-aos="flip-right" class="relative col-span-1 lg:top-0 md:left-14 ">
+              <img class="w-55 h-72 rounded-lg shadow-2xl" src="./Assets/sofa.jpg" alt="sofa">
+          </div>
+        </div>
+    </div>
+</div>
+<!--- Materials Grid Sections End--->
+<div data-aos="fade-up"
+data-aos-anchor-placement="center-center"  class="bg-gray-100">
+<div class="mx-auto max-w-8xl px-4 py-12 sm:px-6 lg:px-8">
+  <div class="mb-8 text-center">
+    <h2 class="text-[18px] mb-4 font-poppins font-semibold uppercase  text-orange-300">Testimonials</h2>
+    <h1 class="text-[42px] font-bold text-gray-900">Our Client Reviews</h1>
+  </div>
+    
+  <section>
+    <div class="flex">
+
+        <div class="w-1/12 flex items-center">
+            <div class="w-full text-right">
+                <button onclick="prev()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg mr-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="size-7">
+                    <path fill-rule="evenodd" d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+            </div>
+        </div>
+        <div id="sliderContainer" class="w-10/12  overflow-hidden border border-white">
+            <ul id="slider" class="flex w-full gap-14">
+               <!-- feedback card 1 -->
+                <div class="bg-img bg-gray-300 h-96 w-max p-5 rounded-lg flex items-end justify-center">
+                <div class="flex justify-center flex-col items-center">
+                    <div class="h-12 w-12 bg-white size-11  border-4 rounded-full  shadow-lg rounded-l-full z-30 flex items-center justify-center -mb-5">
+                       <img src="./Assets/pic1.png"   alt="Profile1">
+                        <div class="h-8 w-8 rounded-full bg-black">
+                          <!--  profile background colour mentioned -->
+                        </div>
+                      </div>
+                    <div class="bg-white h-56 w-80 rounded-2xl text-center justify-evenly p-5  box">
+                      <h3 class="text-[18px] font-bold text-black mt-3">Bang Upin</h3>
+                      <h4 class="text-[14px] opacity-[60%] text-gray-700 mb-4">Pedagang Asongan</h4>
+                      <p class="text-gray-700 mb-4 font-normal text-center">"Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat<br> mahal!"</p>
+                    
+                       <!-- Star Rating -->
+                      <div class="flex justify-center text-yellow-600 text-xl">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span class="text-gray-300">★</span> <!-- Gray star for half-rating -->
+                      </div>
+                    </div>
+                </div>
+               </div>
+                <!-- feedback card 2 -->
+               <div class="bg-img2 bg-gray-300 h-96 w-max p-5 rounded-lg flex items-end justify-center">
+               <div class="flex justify-center flex-col items-center">
+                <div class="h-12 w-12 bg-white size-11  border-4 rounded-full  shadow-lg rounded-l-full z-30 flex items-center justify-center -mb-5">
+                   <img src="./Assets/pic2.png"  alt="Profile2">
+                    <div class="h-8 w-8 rounded-full bg-black">
+                      <!--  profile background colour mentioned -->
+                    </div>
+                  </div>
+                <div class="bg-white h-56 w-80 rounded-2xl text-center justify-evenly p-5  box">
+                  <h3 class="text-[18px] font-bold text-black mt-3">Ibuk Sukijan </h3>
+                  <h4 class="text-[14px] opacity-[60%] text-gray-700 mb-4">Ibu Rumah Tangga</h4>
+                  <p class="text-gray-700 mb-4 font-normal text-center justify-normal">“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“ </p>
+                
+                   <!-- Star Rating -->
+                  <div class="flex justify-center text-yellow-600 text-xl">
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span class="text-gray-300">★</span> <!-- Gray star for half-rating -->
+                  </div>
+                </div>
+            </div>
+           </div>
+               <!-- feedback card 3 -->
+           <div class="bg-img3 bg-gray-300 h-96 w-max p-5 rounded-lg flex items-end justify-center">
+            <div class="flex justify-center flex-col items-center">
+             <div class="h-12 w-12 bg-white size-11  border-4 rounded-full  shadow-lg rounded-l-full z-40 flex items-center justify-center -mb-5">
+                <img src="./Assets/pic3.png"   alt="Profile3">
+                 <div class="h-8 w-8 rounded-full bg-black">
+                   <!--  profile background colour mentioned -->
+                 </div>
+               </div>
+             <div class="bg-white h-52 w-80 rounded-2xl text-center justify-evenly p-5  box">
+               <h3 class="text-[18px] font-bold text-black mt-3">Mpok Ina </h3>
+               <h4 class="text-[14px] opacity-[60%] text-gray-700 mb-4">Karyawan Swasta</h4>
+               <p class="text-gray-700 mb-4 font-normal text-center">“Sangat terjangkau untuk kantong <br>saya yang tidak terlalu banyak“</p>
+             
+                <!-- Star Rating -->
+               <div class="flex justify-center text-yellow-600 text-xl mt-6">
+                 <span>★</span>
+                 <span>★</span>
+                 <span>★</span>
+                 <span>★</span>
+                 <span class="text-gray-300">★</span> <!-- Gray star for half-rating -->
+               </div>
+             </div>
+         </div>
+        </div>
+
+            </ul>
+        </div>
+        <div class="w-1/12 flex items-center">
+            <div class="w-full">
+                <button onclick="next()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg ml-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="size-7">
+                    <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+  </div>
+</div>
+
+   <!------- Footer sections Start--------->
+  <footer data-aos="fade-up" class="bg-gray-100 py-10">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="flex flex-wrap justify-around">
+           <!-- Left Section -->
+            <div data-aos="fade-right" class=" relative w-full md:w-1/4 mb-6 md:mb-0 lg:left-10">
+              <h2 class="text-[28px] font-bold text-gray-800">Panto</h2>
+                <p class="text-gray-600 mt-5 text-[15px]">
+                    The advantage of hiring a workspace with <br>us is that gives you comfortable service<br>and all-around facilities.
+                </p>
+            </div>
+            <!-------Services--------->
+            <div class=" relative w-full md:w-1/4 mb-6 md:mb-0 lg:left-40">
+                <h3 class="text-[17px] font-semibold text-orange-500">Services</h3>
+                <ul class="mt-4 space-y-2">
+                    <li><a href="#" class="text-gray-700 hover:underline text-[15px] font-semibold leading-loose">Email Marketing</a></li>
+                    <li><a href="#" class="text-gray-700 hover:underlinetext-[15px] font-semibold leading-loose">Campaigns</a></li>
+                    <li><a href="#" class="text-gray-700 hover:underline text-[15px] font-semibold leading-loose">Branding</a></li>
+                </ul>
+            </div>
+            <!-----Furniture----->
+            <div class="relative w-full md:w-1/4 mb-6 md:mb-0 lg:left-28">
+                <h3 class="text-[17px] font-semibold text-orange-500">Furniture</h3>
+                <ul class="mt-4 space-y-2">
+                    <li><a href="#" class="text-gray-700 hover:underline text-[15px] font-semibold leading-loose">Beds</a></li>
+                    <li><a href="#" class="text-gray-700 hover:underline text-[15px] font-semibold leading-loose">Chair</a></li>
+                    <li><a href="#" class="text-gray-700 hover:underline text-[15px] font-semibold leading-loose">All</a></li>
+                </ul>
+            </div>
+            <!-------Follow Us------->
+            <div class=" relative w-full md:w-1/4 lg:left-24">
+                <h3 class="text-[17px] font-semibold text-orange-500">Follow Us</h3>
+                <ul class="mt-4 space-y-2">
+                  <!-- <-------------------Facebook----------------> 
+                    <li class="flex items-center">
+                      <!-- -------facebook icon----------->
+                        <svg viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-5 w-5  mr-2" fill="#000000">
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                          <g id="SVGRepo_iconCarrier"> <title>facebook [#176]</title> <desc>Created with Sketch.</desc> <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">   
+                              <g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)" fill="#000000"> 
+                                <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" id="facebook-[#176]"> </path> 
+                                </g> </g> </g> </g></svg>
+
+                        <a href="#" class="text-gray-700 hover:underline text-[15px] font-semibold leading-loose">Facebook</a>
+                    </li>
+                <!-- <----------------Twitter------------------->
+                    <li class="flex items-center">
+                      <!-- <------twitttr icons--------------->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.611 1.798-1.574 2.165-2.723-.951.566-2.005.978-3.127 1.2-.896-.954-2.173-1.55-3.594-1.55-2.719 0-4.92 2.201-4.92 4.917 0 .385.043.76.127 1.124-4.087-.205-7.715-2.164-10.141-5.144-.424.725-.666 1.561-.666 2.457 0 1.694.863 3.188 2.175 4.065-.803-.025-1.56-.247-2.22-.617v.063c0 2.364 1.681 4.338 3.914 4.785-.409.112-.841.171-1.285.171-.314 0-.615-.03-.911-.086.615 1.921 2.396 3.317 4.504 3.356-1.65 1.293-3.733 2.063-5.996 2.063-.39 0-.779-.023-1.17-.068 2.138 1.372 4.676 2.17 7.41 2.17 8.892 0 13.755-7.362 13.755-13.755 0-.209 0-.42-.015-.63.945-.683 1.765-1.54 2.413-2.513z"/>
+                        </svg>
+                     
+                        <a href="#" class="text-gray-700 hover:underline text-[15px] font-semibold leading-loose">Twitter</a>
+                    </li>
+                    <!------------ Instagram ---------------->
+                    <li class="flex items-center">
+                      <!--------Instagram icon-------->
+                      <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier"><path stroke="#000000" stroke-width="12" d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z"></path>
+                          <circle cx="96" cy="96" r="30" stroke="#000000" stroke-width="12"></circle><circle cx="135" cy="57" r="9" fill="#000000"></circle></g></svg>
+                          
+                          <a href="#" class="text-gray-700 hover:underline text-[15px] font-semibold leading-loose">Instagram</a>
+                    </li>
+                  </ul>
+            </div>
+            <!------lisence sections------->
+            <p class="py-4">
+              <div class=" mt-9 container mx-auto px-4">
+                  <div  class="flex justify-around items-center font-medium">
+                      <!---- Copyright Text---->
+                      <div class="relative opacity-50 text-gray-600 text-[15px] font-medium lg:right-48">
+                          Copyright © 2021
+                      </div>
+                      <!---- Links ----->
+                      <div class="relative mt-3 flex space-x-10 text-[15px] text-gray-600 lg:left-28">
+                          <a href="#" class="hover:underline text-[15px]">Terms & Conditions</a>
+                          <a href="#" class="hover:underline text-[15px]">Privacy Policy</a>
+                      </div>
+                  </div>
+                </div>
+          </p>
+        </footer>
+         <!-----Footer Section End------>
+         <!-- \end{code} -->
+
+  <script src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- AOS Script section -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <!-- AOS Script section -->
+    
+</body>
+</html>
