@@ -54,7 +54,7 @@ function autoPlay(){
         slider.style.marginLeft = "0px";
     }     
 }
-//     setTimeout(() => {
+//    setTimeout(() => {
 //         autoPlay();
 //     }, 1000);
 // }
